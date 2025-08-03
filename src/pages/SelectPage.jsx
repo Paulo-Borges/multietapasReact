@@ -51,7 +51,7 @@ const SelectPage = () => {
               <p className="text-xs text-neutral-400">$9/mo</p>
             </div>
           </div>
-          <div className="flex gap-4 p-4 border w-full rounded bg-white mb-4">
+          <div className="flex gap-4 p-4 border border-neutral-200 w-full rounded bg-white mb-4">
             <div>
               <img className="w-8 h-8" src={advanced} alt="" />
             </div>
@@ -60,7 +60,7 @@ const SelectPage = () => {
               <p className="text-xs text-neutral-400">$12/mo</p>
             </div>
           </div>
-          <div className="flex gap-4 p-4 border w-full rounded bg-white mb-4">
+          <div className="flex gap-4 p-4 border border-neutral-200 w-full rounded bg-white mb-4">
             <div>
               <img className="w-8 h-8" src={pro} alt="" />
             </div>

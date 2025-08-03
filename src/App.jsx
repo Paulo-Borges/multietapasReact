@@ -37,7 +37,7 @@ function App() {
             Name
           </label>
           <input
-            className="border text-black placeholder:text-neutral-300 text-xs p-2 mb-3"
+            className="border border-gray-300 text-black placeholder:text-neutral-300 text-xs p-2 mb-3 w-full"
             type="text"
             placeholder="Digite o seu nome"
           />
@@ -45,7 +45,7 @@ function App() {
             Email Address
           </label>
           <input
-            className="border  text-black placeholder:text-neutral-300 text-xs p-2 mb-3"
+            className="border border-gray-300  text-black placeholder:text-neutral-300 text-xs p-2 mb-3 w-full"
             type="text"
             placeholder="Digite o seu email"
           />
@@ -53,7 +53,7 @@ function App() {
             Phone Number
           </label>
           <input
-            className="border  text-black placeholder:text-neutral-300 text-xs p-2 mb-3"
+            className="border border-gray-300  text-black placeholder:text-neutral-300 text-xs p-2 mb-3 w-full"
             type="text"
             placeholder="Digite o seu celular"
           />
