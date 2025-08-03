@@ -12,6 +12,10 @@ const SelectPage = () => {
     navigate("/pickpage");
   }
 
+  function handleGoBack() {
+    navigate("/");
+  }
+
   return (
     <div className=" w-[375px] h-[657px] bg-wite">
       <div className=" w-[375px] h-[590px] relative bg-pink-50 ">
@@ -68,7 +72,7 @@ const SelectPage = () => {
           <div className="flex gap-4 justify-center items-center bg-pink-50 w-full p-2 rounded">
             <span>Monthly</span>
             <div className="bg-blue-900 w-8 h-4 rounded-4xl px-1">
-              <div className="bg-white w-3 h-3 rounded-full"></div>
+              <div className="bg-white w-2.5 h-2.5 rounded-full mt-0.5"></div>
             </div>
             <span className=" text-neutral-400">Yearly</span>
           </div>
@@ -77,7 +81,7 @@ const SelectPage = () => {
       <div className="flex justify-between p-4 bg-white">
         <button
           className=" bg-transparent py-2 px-3 text-xs rounded text-neutral-400"
-          onClick={handleNextStep}
+          onClick={handleGoBack}
         >
           Go Back
         </button>
