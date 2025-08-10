@@ -11,11 +11,6 @@ const PickPage = () => {
   function handleNextStep() {
     navigate("/finishing");
   }
-
-  // function handleGoBack() {
-  //   navigate(-1);
-  // }
-
   return (
     <div className=" w-[375px] h-[657px] bg-white min-[1440px]:w-[1000px] min-[1440px]:h-[590px] min-[1440px]:p-2 min-[1440px]:rounded-md">
       <div className=" w-[375px] h-[590px] relative bg-pink-50 min-[1440px]:bg-transparent">
