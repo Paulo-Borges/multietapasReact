@@ -116,7 +116,6 @@ const FinishingPage = () => {
       <div className="flex justify-between p-4 bg-white min-[1439px]:hidden">
         <ButtonBack onClick={() => navigate("/pickpage")}>Go Back</ButtonBack>
         <Button onClick={handleNextStep}>Confirm</Button>
-        <button className=" bg-[#6032de] py-2 px-3 text-xs rounded text-white"></button>
       </div>
     </div>
   );
