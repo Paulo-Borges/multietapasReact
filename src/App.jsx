@@ -3,6 +3,7 @@ import Banner from "./assets/images/bg-sidebar-mobile.svg";
 import Info from "./assets/images/bg-sidebar-desktop.svg";
 import { useNavigate } from "react-router-dom";
 import Input from "./components/Input";
+import Label from "./components/Label";
 
 function App() {
   const navigate = useNavigate();
@@ -74,27 +75,11 @@ function App() {
           <p className="flex text-left mb-3 min-[1440px]:mb-8 text-neutral-400">
             Please provide your name, email address, and phone number.
           </p>
-          <label
-            className="font-semibold text-xs min-[1440px]:text-sm min-[1440px]:font-medium"
-            htmlFor=""
-          >
-            Name
-          </label>
+          <Label htmlFor="name">Name</Label>
           <Input placeholder="Digite o seu nome" type="text" />
-
-          <label
-            className="font-semibold text-xs min-[1440px]:text-sm min-[1440px]:font-medium"
-            htmlFor=""
-          >
-            Email Address
-          </label>
+          <Label htmlFor="email">Email Address</Label>
           <Input type="text" placeholder="Digite o seu email" />
-          <label
-            className="font-semibold text-xs min-[1440px]:text-sm min-[1440px]:font-medium"
-            htmlFor=""
-          >
-            Phone Number
-          </label>
+          <Label htmlFor="phone">Phone Number</Label>
           <Input type="text" placeholder="Digite o seu celular" />
           <div className="absolute min-[1440px]:-bottom-40 min-[1440px]:right-5 max-[1439px]:hidden ">
             <button
