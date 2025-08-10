@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import Banner from "../assets/images/bg-sidebar-mobile.svg";
 import Info from "../assets/images/bg-sidebar-desktop.svg";
+import Button from "../components/Button";
 
 const FinishingPage = () => {
   const navigate = useNavigate();
@@ -110,13 +111,7 @@ const FinishingPage = () => {
             >
               Go Back
             </button>
-
-            <button
-              className=" bg-blue-950 py-2 px-3 text-xs rounded text-white cursor-pointer"
-              onClick={handleNextStep}
-            >
-              Next Step
-            </button>
+            <Button onClick={handleNextStep}>Confirm</Button>
           </div>
         </form>
       </div>
@@ -127,13 +122,8 @@ const FinishingPage = () => {
         >
           Go Back
         </button>
-
-        <button
-          className=" bg-[#6032de] py-2 px-3 text-xs rounded text-white"
-          onClick={handleNextStep}
-        >
-          Confirm
-        </button>
+        <Button onClick={handleNextStep}>Confirm</Button>
+        <button className=" bg-[#6032de] py-2 px-3 text-xs rounded text-white"></button>
       </div>
     </div>
   );

@@ -4,6 +4,7 @@ import Info from "../assets/images/bg-sidebar-desktop.svg";
 import checkmark from "../assets/images/icon-checkmark.svg";
 
 import { useNavigate } from "react-router-dom";
+import Button from "../components/Button";
 
 const PickPage = () => {
   const navigate = useNavigate();
@@ -133,13 +134,7 @@ const PickPage = () => {
             >
               Go Back
             </button>
-
-            <button
-              className=" bg-blue-950 py-2 px-3 text-xs rounded text-white cursor-pointer"
-              onClick={handleNextStep}
-            >
-              Next Step
-            </button>
+            <Button onClick={handleNextStep}>Next Step</Button>
           </div>
         </form>
       </div>
@@ -150,13 +145,7 @@ const PickPage = () => {
         >
           Go Back
         </button>
-
-        <button
-          className=" bg-blue-950 py-2 px-3 text-xs rounded text-white cursor-pointer"
-          onClick={handleNextStep}
-        >
-          Next Step
-        </button>
+        <Button onClick={handleNextStep}>Next Step</Button>
       </div>
     </div>
   );

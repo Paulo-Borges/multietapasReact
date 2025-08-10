@@ -4,6 +4,7 @@ import Info from "./assets/images/bg-sidebar-desktop.svg";
 import { useNavigate } from "react-router-dom";
 import Input from "./components/Input";
 import Label from "./components/Label";
+import Button from "./components/Button";
 
 function App() {
   const navigate = useNavigate();
@@ -81,23 +82,13 @@ function App() {
           <Input type="text" placeholder="Digite o seu email" />
           <Label htmlFor="phone">Phone Number</Label>
           <Input type="text" placeholder="Digite o seu celular" />
-          <div className="absolute min-[1440px]:-bottom-40 min-[1440px]:right-5 max-[1439px]:hidden ">
-            <button
-              className=" bg-blue-950 py-2 px-3 text-xs min-[1440px]:text-sm rounded text-white"
-              onClick={handleNextStep}
-            >
-              Next Step
-            </button>
+          <div className="absolute min-[1440px]:-bottom-30 min-[1440px]:right-5 max-[1439px]:hidden ">
+            <Button onClick={handleNextStep}>Next Step</Button>
           </div>
         </form>
       </div>
       <div className="flex justify-end p-4 bg-white min-[1440px]:hidden">
-        <button
-          className=" bg-blue-950 py-2 px-3 text-xs rounded text-white"
-          onClick={handleNextStep}
-        >
-          Next Step
-        </button>
+        <Button onClick={handleNextStep}>Next Step</Button>
       </div>
     </div>
   );
