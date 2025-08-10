@@ -103,7 +103,7 @@ const FinishingPage = () => {
               <p className="text-xs font-bold text-[#6032de]">+$12/mo</p>
             </div>
           </div>
-          <div className="flex justify-between p-4 bg-white min-[1439px]:hidden  min-[1440px]:flex min-[1440px]:w-full">
+          <div className="flex justify-between p-4 bg-white max-[1439px]:hidden  min-[1440px]:flex min-[1440px]:w-full">
             <button
               className=" bg-transparent py-2 px-3 text-xs rounded text-neutral-400 cursor-pointer"
               onClick={() => navigate(-1)}
