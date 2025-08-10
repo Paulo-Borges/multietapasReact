@@ -2,6 +2,7 @@ import "./App.css";
 import Banner from "./assets/images/bg-sidebar-mobile.svg";
 import Info from "./assets/images/bg-sidebar-desktop.svg";
 import { useNavigate } from "react-router-dom";
+import Input from "./components/Input";
 
 function App() {
   const navigate = useNavigate();
@@ -79,33 +80,22 @@ function App() {
           >
             Name
           </label>
-          <input
-            className="border border-gray-300 text-black placeholder:text-neutral-300 text-xs p-2 mb-3 min-[1440px]:mb-8 w-full rounded-md "
-            type="text"
-            placeholder="Digite o seu nome"
-          />
+          <Input placeholder="Digite o seu nome" type="text" />
+
           <label
             className="font-semibold text-xs min-[1440px]:text-sm min-[1440px]:font-medium"
             htmlFor=""
           >
             Email Address
           </label>
-          <input
-            className="border border-gray-300  text-black placeholder:text-neutral-300 text-xs p-2 mb-3 min-[1440px]:mb-8 w-full rounded-md"
-            type="text"
-            placeholder="Digite o seu email"
-          />
+          <Input type="text" placeholder="Digite o seu email" />
           <label
             className="font-semibold text-xs min-[1440px]:text-sm min-[1440px]:font-medium"
             htmlFor=""
           >
             Phone Number
           </label>
-          <input
-            className="border border-gray-300  text-black placeholder:text-neutral-300 text-xs p-2 mb-3 w-full rounded-md"
-            type="text"
-            placeholder="Digite o seu celular"
-          />
+          <Input type="text" placeholder="Digite o seu celular" />
           <div className="absolute min-[1440px]:-bottom-40 min-[1440px]:right-5 max-[1439px]:hidden ">
             <button
               className=" bg-blue-950 py-2 px-3 text-xs min-[1440px]:text-sm rounded text-white"
