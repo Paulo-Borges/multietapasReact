@@ -5,6 +5,7 @@ import checkmark from "../assets/images/icon-checkmark.svg";
 
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import ButtonBack from "../components/ButtonBack";
 
 const PickPage = () => {
   const navigate = useNavigate();
@@ -128,23 +129,13 @@ const PickPage = () => {
             </div>
           </div>
           <div className="flex justify-between p-4 bg-white max-[1439px]:hidden min-[1440px]:flex min-[1440px]:w-full">
-            <button
-              className=" bg-transparent py-2 px-3 text-xs rounded text-neutral-400 cursor-pointer"
-              onClick={() => navigate("/select")}
-            >
-              Go Back
-            </button>
+            <ButtonBack onClick={() => navigate("/select")}>Go Back</ButtonBack>
             <Button onClick={handleNextStep}>Next Step</Button>
           </div>
         </form>
       </div>
       <div className="flex justify-between p-4 bg-white min-[1439px]:hidden">
-        <button
-          className=" bg-transparent py-2 px-3 text-xs rounded text-neutral-400 cursor-pointer"
-          onClick={() => navigate(-1)}
-        >
-          Go Back
-        </button>
+        <ButtonBack onClick={() => navigate("/select")}>Go Back</ButtonBack>
         <Button onClick={handleNextStep}>Next Step</Button>
       </div>
     </div>

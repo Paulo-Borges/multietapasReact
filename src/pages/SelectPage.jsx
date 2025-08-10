@@ -6,6 +6,7 @@ import advanced from "../assets/images/icon-advanced.svg";
 import pro from "../assets/images/icon-pro.svg";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
+import ButtonBack from "../components/ButtonBack";
 
 const SelectPage = () => {
   const navigate = useNavigate();
@@ -122,23 +123,13 @@ const SelectPage = () => {
           </div>
 
           <div className="flex justify-between p-2 bg-white max-[1440px]:hidden min-[1440px]:w-full ">
-            <button
-              className=" bg-transparent py-2 px-3 text-xs rounded text-neutral-400 cursor-pointer"
-              onClick={handleGoBack}
-            >
-              Go Back
-            </button>
+            <ButtonBack onClick={handleGoBack}>Go Back</ButtonBack>
             <Button onClick={handleNextStep}>Next Step</Button>
           </div>
         </form>
       </div>
       <div className="flex justify-between p-4 bg-white min-[1439px]:hidden">
-        <button
-          className=" bg-transparent py-2 px-3 text-xs rounded text-neutral-400"
-          onClick={handleGoBack}
-        >
-          Go Back
-        </button>
+        <ButtonBack onClick={handleGoBack}>Go Back</ButtonBack>
         <Button onClick={handleNextStep}>Next Step</Button>
       </div>
     </div>

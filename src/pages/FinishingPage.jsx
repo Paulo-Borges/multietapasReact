@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import Banner from "../assets/images/bg-sidebar-mobile.svg";
 import Info from "../assets/images/bg-sidebar-desktop.svg";
 import Button from "../components/Button";
+import ButtonBack from "../components/ButtonBack";
 
 const FinishingPage = () => {
   const navigate = useNavigate();
@@ -105,23 +106,15 @@ const FinishingPage = () => {
             </div>
           </div>
           <div className="flex justify-between p-4 bg-white max-[1439px]:hidden  min-[1440px]:flex min-[1440px]:w-full">
-            <button
-              className=" bg-transparent py-2 px-3 text-xs rounded text-neutral-400 cursor-pointer"
-              onClick={() => navigate(-1)}
-            >
+            <ButtonBack onClick={() => navigate("/pickpage")}>
               Go Back
-            </button>
+            </ButtonBack>
             <Button onClick={handleNextStep}>Confirm</Button>
           </div>
         </form>
       </div>
       <div className="flex justify-between p-4 bg-white min-[1439px]:hidden">
-        <button
-          className=" bg-transparent py-2 px-3 text-xs rounded text-neutral-400"
-          onClick={() => navigate(-1)}
-        >
-          Go Back
-        </button>
+        <ButtonBack onClick={() => navigate("/pickpage")}>Go Back</ButtonBack>
         <Button onClick={handleNextStep}>Confirm</Button>
         <button className=" bg-[#6032de] py-2 px-3 text-xs rounded text-white"></button>
       </div>
