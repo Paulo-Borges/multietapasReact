@@ -6,6 +6,8 @@ import checkmark from "../assets/images/icon-checkmark.svg";
 import { useNavigate } from "react-router-dom";
 import Button from "../components/Button";
 import ButtonBack from "../components/ButtonBack";
+import Lista from "../components/Lista";
+import ListaActive from "../components/ListaActive";
 
 const PickPage = () => {
   const navigate = useNavigate();
@@ -18,18 +20,10 @@ const PickPage = () => {
       <div className=" w-[375px] h-[590px] relative bg-pink-50 min-[1440px]:bg-transparent">
         <div className="flex justify-center min-[1440px]:hidden ">
           <ul className="flex absolute z-10 gap-8 pt-10 ">
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              1
-            </li>
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              2
-            </li>
-            <li className="text-sm bg-amber-50 w-6 h-6 rounded-full pt-0.4">
-              3
-            </li>
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              4
-            </li>
+            <Lista>1</Lista>
+            <Lista>2</Lista>
+            <ListaActive>3</ListaActive>
+            <Lista>4</Lista>
           </ul>
           <img className="relative " src={Banner} alt="" />
         </div>

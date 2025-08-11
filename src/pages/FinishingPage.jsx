@@ -4,6 +4,8 @@ import Banner from "../assets/images/bg-sidebar-mobile.svg";
 import Info from "../assets/images/bg-sidebar-desktop.svg";
 import Button from "../components/Button";
 import ButtonBack from "../components/ButtonBack";
+import Lista from "../components/Lista";
+import ListaActive from "../components/ListaActive";
 
 const FinishingPage = () => {
   const navigate = useNavigate();
@@ -16,18 +18,10 @@ const FinishingPage = () => {
       <div className=" w-[375px] h-[590px] relative bg-pink-50 min-[1440px]:bg-transparent">
         <div className="flex justify-center min-[1440px]:hidden">
           <ul className="flex absolute z-10 gap-8 pt-10 ">
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              1
-            </li>
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              2
-            </li>
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              3
-            </li>
-            <li className="text-sm bg-amber-50 w-6 h-6 rounded-full pt-0.4">
-              4
-            </li>
+            <Lista>1</Lista>
+            <Lista>2</Lista>
+            <Lista>3</Lista>
+            <ListaActive>4</ListaActive>
           </ul>
           <img className="relative " src={Banner} alt="" />
         </div>
