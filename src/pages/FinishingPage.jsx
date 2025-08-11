@@ -6,6 +6,7 @@ import Button from "../components/Button";
 import ButtonBack from "../components/ButtonBack";
 import Lista from "../components/Lista";
 import ListaActive from "../components/ListaActive";
+import Span from "../components/Span";
 
 const FinishingPage = () => {
   const navigate = useNavigate();
@@ -31,18 +32,14 @@ const FinishingPage = () => {
               <li className="text-sm text-amber-50 border-1 w-8 h-8 rounded-full p-2 flex gap-10 ">
                 1
                 <div className="flex flex-col text-start w-screen -mt-2">
-                  <span className="text-[10px] font-light text-gray-500">
-                    STEP 1
-                  </span>
+                  <Span>STEP 1</Span>
                   <h2 className="text-[12px] w-20 text-amber-50">YOUR INFO</h2>
                 </div>
               </li>
               <li className="text-sm text-amber-50 border-1 w-8 h-8 rounded-full p-2 flex gap-10 ">
                 2
                 <div className="text-start w-screen -mt-3">
-                  <span className="text-[10px] font-light text-gray-500">
-                    STEP 2
-                  </span>
+                  <Span>STEP 2</Span>
                   <h2 className="text-[12px] w-20 text-amber-50">
                     SELECT PLAN
                   </h2>
@@ -51,14 +48,14 @@ const FinishingPage = () => {
               <li className="text-sm text-amber-50 border-1 w-8 h-8 rounded-full p-2 flex gap-10">
                 3
                 <div className="text-start w-screen -mt-4">
-                  <span className="text-[10px] text-gray-500">STEP 3</span>
+                  <Span>STEP 3</Span>
                   <h2 className="text-[12px] w-20 text-amber-50">ADD-ONS</h2>
                 </div>
               </li>
               <li className="text-sm bg-amber-50 w-8 h-8 rounded-full p-2 flex gap-10">
                 4
                 <div className="text-start w-screen -mt-4">
-                  <span className="text-[10px] text-gray-500">STEP 4</span>
+                  <Span>STEP 4</Span>
                   <h2 className="text-[12px] w-20 text-amber-50">SUMMARY</h2>
                 </div>
               </li>
