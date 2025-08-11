@@ -9,6 +9,7 @@ import ListaActive from "./components/ListaActive";
 import Lista from "./components/Lista";
 import Span from "./components/Span";
 import Menu from "./components/Menu";
+import Title from "./components/Title";
 
 function App() {
   const navigate = useNavigate();
@@ -64,7 +65,7 @@ function App() {
           <img src={Info} alt="" />
         </div>
         <form className="flex flex-col bg-white w-[335px] min-[1440px]:w-[600px] m-auto absolute left-5 min-[1440px]:left-90 top-26 min-[1440px]:top-6 p-6 items-start rounded-2xl">
-          <h1 className="font-bold text-2xl mb-3">Personal info</h1>
+          <Title>Personal info</Title>
           <p className="flex text-left mb-3 min-[1440px]:mb-8 text-neutral-400">
             Please provide your name, email address, and phone number.
           </p>

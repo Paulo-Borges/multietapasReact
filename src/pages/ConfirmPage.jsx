@@ -5,6 +5,7 @@ import Info from "../assets/images/bg-sidebar-desktop.svg";
 import { useNavigate } from "react-router-dom";
 import Span from "../components/Span";
 import Menu from "../components/Menu";
+import Title from "../components/Title";
 
 const ConfirmPage = () => {
   const navigate = useNavigate();
@@ -72,7 +73,7 @@ const ConfirmPage = () => {
             onClick={() => navigate("/")}
             alt="Thank You"
           />
-          <h1 className="font-bold text-2xl mb-3">Thank you!</h1>
+          <Title>Thank you!</Title>
           <p className="flex text-center mb-3 text-neutral-400 text-[15px]">
             Thanks for confirming your subscription! We hope you have fun using
             our platform. If you ever need support, please feel free to email us
