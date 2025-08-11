@@ -5,6 +5,8 @@ import { useNavigate } from "react-router-dom";
 import Input from "./components/Input";
 import Label from "./components/Label";
 import Button from "./components/Button";
+import ListaActive from "./components/ListaActive";
+import Lista from "./components/Lista";
 
 function App() {
   const navigate = useNavigate();
@@ -17,18 +19,10 @@ function App() {
       <div className=" w-[375px] h-[590px] relative bg-pink-50 min-[1440px]:bg-transparent ">
         <div className="flex justify-center min-[1440px]:hidden ">
           <ul className="flex absolute z-10 gap-8 pt-10 ">
-            <li className="text-sm bg-amber-50 w-6 h-6 rounded-full pt-0.4">
-              1
-            </li>
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              2
-            </li>
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              3
-            </li>
-            <li className="text-sm text-amber-50 border-1 w-6 h-6 rounded-full">
-              4
-            </li>
+            <ListaActive>1</ListaActive>
+            <Lista>2</Lista>
+            <Lista>3</Lista>
+            <Lista>4</Lista>
           </ul>
           <img className="relative " src={Banner} alt="" />
         </div>
