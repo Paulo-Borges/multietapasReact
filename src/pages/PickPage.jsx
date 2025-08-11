@@ -11,6 +11,7 @@ import ListaActive from "../components/ListaActive";
 import Span from "../components/Span";
 import Menu from "../components/Menu";
 import Title from "../components/Title";
+import SubTitle from "../components/SubTitle";
 
 const PickPage = () => {
   const navigate = useNavigate();
@@ -67,10 +68,7 @@ const PickPage = () => {
         </div>
         <form className="flex flex-col bg-white w-[335px] min-[1440px]:w-[500px] m-auto absolute left-5 min-[1440px]:left-90 top-26 min-[1440px]:top-16 p-6 items-start rounded-2xl">
           <Title>Pick add-ons</Title>
-          <p className="flex text-left mb-3 text-neutral-400 min-[1440px]:mb-10">
-            Add-ons help enhance your gaming experience.
-          </p>
-
+          <SubTitle>Add-ons help enhance your gaming experience.</SubTitle>
           <div className="flex items-center gap-4 p-4 justify-around border w-full rounded bg-pink-50 mb-4">
             <div>
               <img

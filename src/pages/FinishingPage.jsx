@@ -9,6 +9,7 @@ import ListaActive from "../components/ListaActive";
 import Span from "../components/Span";
 import Menu from "../components/Menu";
 import Title from "../components/Title";
+import SubTitle from "../components/SubTitle";
 
 const FinishingPage = () => {
   const navigate = useNavigate();
@@ -66,10 +67,9 @@ const FinishingPage = () => {
         </div>
         <form className="flex flex-col bg-white w-[335px] min-[1440px]:w-[500px] m-auto absolute left-5 min-[1440px]:left-90 top-26 p-6 items-start rounded-2xl">
           <Title>Finishing up</Title>
-          <p className="flex text-left mb-3 text-neutral-400 min-[1440px]:mb-10 ">
+          <SubTitle>
             Double-check everything looks OK before confirming.
-          </p>
-
+          </SubTitle>
           <div className="flex items-center p-4 justify-between w-full border-b border-b-gray-200 rounded bg-pink-50">
             <div className="flex flex-col items-start">
               <h2 className="text-xs font-semibold">Arcade (Monthly)</h2>

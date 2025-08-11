@@ -12,6 +12,7 @@ import ListaActive from "../components/ListaActive";
 import Span from "../components/Span";
 import Menu from "../components/Menu";
 import Title from "../components/Title";
+import SubTitle from "../components/SubTitle";
 
 const SelectPage = () => {
   const navigate = useNavigate();
@@ -73,9 +74,7 @@ const SelectPage = () => {
         </div>
         <form className="flex flex-col bg-white w-[335px] min-[1440px]:w-[500px] m-auto absolute left-5 min-[1440px]:left-90 top-26 min-[1440px]:top-6 p-6 items-start rounded-2xl">
           <Title>Select your plan</Title>
-          <p className="flex text-left mb-3 min-[1440px]:mb-8 text-neutral-400 ">
-            You have the option of monthly or yearly billing.
-          </p>
+          <SubTitle>You have the option of monthly or yearly billing.</SubTitle>
           <div className="w-full min-[1439px]:hidden min-[1440px]:flex min-[1440px]:gap-4 min-[1440px]:mb-4">
             <div className="flex min-[1440px]:flex-col min-[1440px]:text-start gap-4 p-4 border w-full rounded bg-pink-50 mb-4">
               <div>
