@@ -7,6 +7,7 @@ import ButtonBack from "../components/ButtonBack";
 import Lista from "../components/Lista";
 import ListaActive from "../components/ListaActive";
 import Span from "../components/Span";
+import Menu from "../components/Menu";
 
 const FinishingPage = () => {
   const navigate = useNavigate();
@@ -33,29 +34,29 @@ const FinishingPage = () => {
                 1
                 <div className="flex flex-col text-start w-screen -mt-2">
                   <Span>STEP 1</Span>
-                  <h2 className="text-[12px] w-20 text-amber-50">YOUR INFO</h2>
+                  <Menu>YOUR INFO</Menu>
                 </div>
               </li>
               <li className="text-sm text-amber-50 border-1 w-8 h-8 rounded-full p-2 flex gap-10 ">
                 2
                 <div className="text-start w-screen -mt-3">
                   <Span>STEP 2</Span>
-                  <h2 className="text-[12px] w-20 text-amber-50">
-                    SELECT PLAN
-                  </h2>
+                  <Menu>SELECT PLAN</Menu>
+                  <h2 className="text-[12px] w-20 text-amber-50"></h2>
                 </div>
               </li>
               <li className="text-sm text-amber-50 border-1 w-8 h-8 rounded-full p-2 flex gap-10">
                 3
                 <div className="text-start w-screen -mt-4">
                   <Span>STEP 3</Span>
-                  <h2 className="text-[12px] w-20 text-amber-50">ADD-ONS</h2>
+                  <Menu>ADD-ONS</Menu>
                 </div>
               </li>
               <li className="text-sm bg-amber-50 w-8 h-8 rounded-full p-2 flex gap-10">
                 4
                 <div className="text-start w-screen -mt-4">
                   <Span>STEP 4</Span>
+                  <Menu>SUMMARY</Menu>
                   <h2 className="text-[12px] w-20 text-amber-50">SUMMARY</h2>
                 </div>
               </li>
