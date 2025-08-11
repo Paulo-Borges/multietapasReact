@@ -6,7 +6,7 @@ import App from "./App.jsx";
 import PickPage from "./pages/PickPage.jsx";
 import SelectPage from "./pages/SelectPage.jsx";
 import ConfirmPage from "./pages/ConfirmPage.jsx";
-import FinishingPage from "./pages/finishingPage.jsx";
+import FinishingPage from "./pages/FinishingPage.jsx";
 
 const router = createBrowserRouter([
   {
